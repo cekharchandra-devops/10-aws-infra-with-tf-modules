@@ -1,5 +1,5 @@
 module "vpc" {
-  source = "../09-tf-vpc-module"
+  source = "git::https://github.com/cekharchandra-devops/09-tf-aws-vpc-module.git?ref=main"
   project_name = "expense"
   environmet = "dev"
   public_subnet_cidr_blocks = var.public_subnet_cidr_blocks
